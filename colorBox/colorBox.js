@@ -12,10 +12,12 @@ function glow(x)
     var box = document.getElementById(x)
     box.style.boxShadow = "";
 }
-var container = new Array();
-
-for (var i=0; i<100; i++){
-var tag = document.createElement("div");
-var text = document
-
+for (let i=1; i<36; i++)
+{
+    const boxx = document.createElement("div")
+    boxx.setAttribute('id',('box'+i));
+    boxx.setAttribute('class','box')
+    boxx.onmouseover = randomcolor();
+    boxx.onmouseleave = glow();
+    document.body.appendChild(boxx);
 }
