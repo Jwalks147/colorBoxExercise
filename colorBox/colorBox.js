@@ -12,7 +12,7 @@ function glow(x)
     var box = document.getElementById(x)
     box.style.boxShadow = "";
 }
-for (let i=1; i<27; i++)
+for (let i=1; i<100; i++)
 {
     const boxx = document.createElement("div")
     boxx.setAttribute('id',(i));
